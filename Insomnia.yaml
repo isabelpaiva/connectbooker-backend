@@ -1,0 +1,313 @@
+_type: export
+__export_format: 4
+__export_date: 2023-07-26T00:44:33.119Z
+__export_source: insomnia.desktop.app:v2022.7.0
+resources:
+  - _id: req_2542182d7c114cf59a2970ab587373e1
+    parentId: fld_a55f12120e274c33aafa0f4193f76aa4
+    modified: 1690311849344
+    created: 1690311796818
+    url: localhost:3000/schedule
+    name: New Request
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Isabel Paiva",
+        	"email": "isabel@mail.com",
+        	"phone": "13996411414"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1690311768565
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a55f12120e274c33aafa0f4193f76aa4
+    parentId: wrk_60165b2216154d9187625bf99c378265
+    modified: 1690311778337
+    created: 1690311768365
+    name: Contact
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1690311768465
+    _type: request_group
+  - _id: wrk_60165b2216154d9187625bf99c378265
+    parentId: null
+    modified: 1690216998513
+    created: 1690216998513
+    name: backend-contacts
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_0a08d7945ef043478bfa51857b3281ac
+    parentId: fld_a55f12120e274c33aafa0f4193f76aa4
+    modified: 1690311846371
+    created: 1690311833100
+    url: ""
+    name: Delete contact
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690311768515
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_42abd5e0160b404db535f538350875b5
+    parentId: fld_a55f12120e274c33aafa0f4193f76aa4
+    modified: 1690311847876
+    created: 1690311822679
+    url: ""
+    name: Update Contact
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690311768490
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cfbc87c7d4344f15b7f42f150733d0fb
+    parentId: fld_a55f12120e274c33aafa0f4193f76aa4
+    modified: 1690311780141
+    created: 1690308642135
+    url: ""
+    name: List contact
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690311768415
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2de5cc2649864e2a9ab04dcf66fb92fd
+    parentId: fld_207defe215ac4d33b1b4b79143ec2387
+    modified: 1690312160095
+    created: 1690217002741
+    url: localhost:3000/users
+    name: Create User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"phone": "13996521201",
+        	"name": "Ana",
+        	"email": "ana@mail.com",
+        	"password": "1234"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1690217002991
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_207defe215ac4d33b1b4b79143ec2387
+    parentId: wrk_60165b2216154d9187625bf99c378265
+    modified: 1690311691751
+    created: 1690311691751
+    name: Users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1690311691751
+    _type: request_group
+  - _id: req_0ba983dd49104075bb1ec9a8a5a20e0c
+    parentId: fld_207defe215ac4d33b1b4b79143ec2387
+    modified: 1690332136804
+    created: 1690224037787
+    url: localhost:3000/users/
+    name: update user
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: '"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IklzYWJlbGEiLCJpYXQiOjE2OTAzMTU0NjAsImV4cCI6MTY5MDMxNTQ2MCwic3ViIjoiODY2NzM0MjAtMjg5Ni00YWQ4LWE4ZmYtNDExNGY0ODNmYWVmIn0.OcBA-qwvD1lzSOehRIMogiIWu3JB6dmE2BDDhgTM6bU"'
+    metaSortKey: -1690217002941
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_501457353f6d44018747244d8705ec6c
+    parentId: fld_207defe215ac4d33b1b4b79143ec2387
+    modified: 1690315955182
+    created: 1690224052604
+    url: localhost:3000/users
+    name: delete user
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690217002891
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f6ad21fb5c894dc9abbbab367748db14
+    parentId: fld_207defe215ac4d33b1b4b79143ec2387
+    modified: 1690311700649
+    created: 1690224025315
+    url: ""
+    name: Get one
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690217002841
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f38a40db227d4f48af06a70e7e396f54
+    parentId: fld_207defe215ac4d33b1b4b79143ec2387
+    modified: 1690313588535
+    created: 1690224012461
+    url: localhost:3000/users
+    name: Get All users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690217002791
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3b1d3738e2f04de3be881df772c00a0d
+    parentId: fld_6bc50ff8c73a445e91d814e4698fcdec
+    modified: 1690311744533
+    created: 1690239694688
+    url: localhost:3000/login
+    name: login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "isabela@mail.com",
+        	"password": "1234"
+        	
+        }	
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1690311739541
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_6bc50ff8c73a445e91d814e4698fcdec
+    parentId: wrk_60165b2216154d9187625bf99c378265
+    modified: 1690311750540
+    created: 1690311721267
+    name: Login
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1690308635967.5
+    _type: request_group
+  - _id: env_9ff083adb8a70cc2a2504f5417019494ee36b6fd
+    parentId: wrk_60165b2216154d9187625bf99c378265
+    modified: 1690216998519
+    created: 1690216998519
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1690216998519
+    _type: environment
+  - _id: jar_9ff083adb8a70cc2a2504f5417019494ee36b6fd
+    parentId: wrk_60165b2216154d9187625bf99c378265
+    modified: 1690216998526
+    created: 1690216998526
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_5e521526d8194b70986ed50f0819445e
+    parentId: wrk_60165b2216154d9187625bf99c378265
+    modified: 1690216998514
+    created: 1690216998514
+    fileName: backend-contacts
+    contents: ""
+    contentType: yaml
+    _type: api_spec
