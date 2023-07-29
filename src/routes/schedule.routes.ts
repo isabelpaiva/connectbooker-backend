@@ -2,6 +2,8 @@ import { Router } from 'express'
 import {
   createScheduleController,
   listScheduleController,
+  updateScheduleController,
+  deleteScheduleController,
 } from '../controllers/schedule.controller'
 import { ensureAuthMiddleware } from '../middlewares/ensureAuth.middleware'
 import { ensureDataIsValid } from '../middlewares/ensureDataIsValid.middleware'
@@ -15,4 +17,7 @@ scheduleRoutes.post(
   ensureDataIsValid(scheduleSchema),
   createScheduleController,
 )
+
 scheduleRoutes.get('/:id', ensureAuthMiddleware, listScheduleController)
+scheduleRoutes.patch('/:id', ensureAuthMiddleware, updateScheduleController)
+scheduleRoutes.delete('/:id', ensureAuthMiddleware, deleteScheduleController)

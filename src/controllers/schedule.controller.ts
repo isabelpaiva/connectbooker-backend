@@ -16,3 +16,13 @@ export const listScheduleController = async (req: Request, res: Response) => {
   const schedule = await listScheduleService(userId)
   return res.json(schedule)
 }
+
+export const updateScheduleController = async (req: Request, res: Response) => {
+  const schedule = await updateScheduleService(req.params.id, req.body)
+  return res.status(200).json(schedule)
+}
+
+export const deleteScheduleController = async (req: Request, res: Response) => {
+  await deleteScheduleService(req.params.id)
+  return res.status(204).json({})
+}
