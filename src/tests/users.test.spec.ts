@@ -26,8 +26,8 @@ describe('Bloco de Teste Usuarios', () => {
 
   test('Criando corretamente um novo usuário', async () => {
     const response = await supertest(app).post('/users').send({
-      name: 'Saul',
-      email: 'saul.contatodev@gmail.com',
+      name: 'Ana',
+      email: 'ana.contatodev@gmail.com',
       password: '123456789',
       phone: '7199999-9999',
     })
@@ -42,23 +42,20 @@ describe('Bloco de Teste Usuarios', () => {
       phone: '7199999-9999',
     })
 
-    // Verificar se o usuário foi criado com sucesso
     expect(createUserResponse.status).toBe(201)
     const userId = createUserResponse.body.id
 
-    // Atualizar os dados do usuário criado
     const updateUserResponse = await supertest(app)
       .patch(`/users/${userId}`)
       .send({
-        name: 'Nome alterado', // Corrigido para "name"
+        name: 'Nome alterado',
       })
 
-    // Verificar se a atualização foi bem-sucedida
     expect(updateUserResponse.status).toBe(200)
   })
   test('Deletando um usuario', async () => {
     const createUserResponse = await supertest(app).post('/users').send({
-      name: 'Isa Vai ser apagada',
+      name: 'Isabel deletado',
       email: 'isadeletado.contatodev@gmail.com',
       password: '123456789',
       phone: '7199999-9999',

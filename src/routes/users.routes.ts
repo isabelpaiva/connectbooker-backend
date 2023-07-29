@@ -8,7 +8,6 @@ import {
 } from '../controllers/users.controller'
 import { ensureDataIsValid } from '../middlewares/ensureDataIsValid.middleware'
 import { userSchemaRequest } from '../schemas/users.schemas'
-import { verifyUserExists } from '../middlewares/ensureUserExistsMiddleware'
 
 export const userRoutes = Router()
 userRoutes.post('/', ensureDataIsValid(userSchemaRequest), createUserController)
