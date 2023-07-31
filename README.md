@@ -27,7 +27,7 @@ $ git clone git@github.com:isabelpaiva/connectbooker-backend
 ## API Endpoints
 A API fornece os seguintes endpoints:
 
-#Users 
+# Users 
 
 POST /login - Realiza o login de um usuário.
 ```markdown
@@ -57,7 +57,10 @@ GET /users/ - Lista todos os usuários.
 
 GET /users/profile/{id} - Obtém informações de um usuário específico por meio do seu ID.
 
-#Contatos 
+
+
+
+# Contatos 
 
 POST /schedule/{id} - Cria um novo contato associado a um usuário específico pelo seu ID.```markdown
 ```markdown
@@ -67,7 +70,6 @@ POST /schedule/{id} - Cria um novo contato associado a um usuário específico p
   "name": "John Doe"
 }
 ```
-
 DELETE /schedule/{id} - Deleta um contato associado a um usuário pelo seu ID.
 
 PATCH /schedule/{id} - Atualiza os dados de um contato associado a um usuário pelo seu ID.
