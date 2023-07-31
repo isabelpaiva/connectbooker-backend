@@ -6,7 +6,9 @@ Este repositório contém um projeto CRUD construído usando Express.
 - [Instalação](#instalação)
 - [Configuração](#configuração)
 - [API Endpoints](#api-endpoints)
+- [Testes](#testes)
 - [Banco de Dados](#banco-de-dados)
+
 
 ## Instalação
 
@@ -58,8 +60,6 @@ GET /users/ - Lista todos os usuários.
 GET /users/profile/{id} - Obtém informações de um usuário específico por meio do seu ID.
 
 
-
-
 # Contatos 
 
 POST /schedule/{id} - Cria um novo contato associado a um usuário específico pelo seu ID.```markdown
@@ -82,3 +82,20 @@ GET /schedule/{id}- Obtém informações de um contato específico associado a u
 O projeto utiliza o PostgresSQL como banco de dados. As migrações de banco de dados necessárias são gerenciadas usando o TypeORM.
 
 Para instalar o PostgresSQL localmente, você pode [clicar aqui](https://www.postgresql.org/download/).
+
+# Testes
+
+Este é um projeto de entrega que contém testes automatizados implementados utilizando a biblioteca de testes Jest. 
+
+## Como Executar os Testes
+
+Abra o terminal/prompt de comando na pasta do projeto.
+Instale as dependências do projeto com o seguinte comando:
+npm install
+
+Após a instalação das dependências, você pode executar os testes com o seguinte comando:
+
+npm test
+
+O Jest irá automaticamente buscar todos os arquivos de teste com o padrão de nomenclatura *.test.js ou *.spec.js e executá-los.
+
