@@ -62,7 +62,7 @@ GET /users/profile/{id} - Obtém informações de um usuário específico por me
 
 # Contatos 
 
-POST /schedule/{id} - Cria um novo contato associado a um usuário específico pelo seu ID.```markdown
+POST /schedule/{id} - Cria um novo contato associado a um usuário específico pelo seu ID.
 ```markdown
 {
   "email": "user@mail.com",
