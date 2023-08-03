@@ -79,7 +79,12 @@ GET /schedule/{id}- Obtém informações de um contato específico associado a u
 
 ## Banco de Dados
 
-O projeto utiliza o PostgresSQL como banco de dados. As migrações de banco de dados necessárias são gerenciadas usando o TypeORM.
+O projeto utiliza o PostgresSQL como banco de dados. Crie um database utilizando o comando CREATE DATABASE dentro do terminal psql.
+As migrações de banco de dados necessárias são gerenciadas usando o TypeORM.
+
+Para rodas as migrações basta utilizar o comando: 
+
+npm run typeorm migration:run
 
 Para instalar o PostgresSQL localmente, você pode [clicar aqui](https://www.postgresql.org/download/).
 
