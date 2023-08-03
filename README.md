@@ -22,11 +22,6 @@ $ git clone git@github.com:isabelpaiva/connectbooker-backend
 npm install
 ``` 
 
-3. Gere as migrations:
-```bash
-npm run typeorm migration:generate
-```
-
 4. Rode as migrations:
 ```bash
 npm run typeorm migration:run
