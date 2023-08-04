@@ -21,24 +21,24 @@ $ git clone git@github.com:isabelpaiva/connectbooker-backend
 ```bash
 npm install
 ``` 
-4. Configure o .env:
+3. Configure o .env:
 ```bash
 DATABASE_URL= postgres://seuUser:suaSenha@localhost:5432/nomeDoDatabase
 SECRET_KEY=
 ```
 
-5. Crie o banco de dados:
+4. Crie o banco de dados:
 
 ```bash
-psql: CREATE DATABASE nomeDoDatabase
+psql: CREATE DATABASE nomeDoDatabase;
 ```
 
-4. Rode as migrations:
+5. Rode as migrations:
 ```bash
 npm run typeorm migration:run
 ```
 
-5. Inicie o servidor:
+6. Inicie o servidor:
 ```bash
 npm run dev
 ```
