@@ -18,7 +18,7 @@ export const listScheduleController = async (req: Request, res: Response) => {
 }
 
 export const updateScheduleController = async (req: Request, res: Response) => {
-  const schedule = await updateScheduleService(req.params.id, req.body)
+  const schedule = await updateScheduleService(req.body, req.params.id)
   return res.status(200).json(schedule)
 }
 
